@@ -5,10 +5,8 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CppStudy
     main.cpp
-    devtest.cpp float_study.cpp reference_study.cpp
-    RotateQueue/rotateQueue.cpp input.cpp
-    RotateQueue/rotateQueueOthers.cpp
-    RotateQueue/rotateQueueMento.cpp
-    MergeSort/k.cpp Scope/scopeExample.cpp Scope/classScopeExample.cpp MergeSort/kMento.cpp "MoreSpicy(Heap)/moreSpicy.cpp" "MoreSpicy(Heap)/priorityQueueExamples.cpp")
+    STLStudy/devtest.cpp STLStudy/float_study.cpp STLStudy/reference_study.cpp
+    STLStudy/input.cpp
+    STLStudy/MergeSort/k.cpp STLStudy/Scope/scopeExample.cpp STLStudy/Scope/classScopeExample.cpp STLStudy/MergeSort/kMento.cpp "STLStudy/MoreSpicy(Heap)/moreSpicy.cpp" "STLStudy/MoreSpicy(Heap)/priorityQueueExamples.cpp" "STLStudy/FindNumber(Set)/findNumber.cpp")
 
 
