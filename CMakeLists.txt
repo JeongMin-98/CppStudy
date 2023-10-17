@@ -8,5 +8,5 @@ add_executable(CppStudy
 #    STLStudy/devtest.cpp STLStudy/float_study.cpp STLStudy/reference_study.cpp
 #    STLStudy/input.cpp
 #    STLStudy/MergeSort/k.cpp STLStudy/Scope/scopeExample.cpp STLStudy/Scope/classScopeExample.cpp STLStudy/MergeSort/kMento.cpp "STLStudy/MoreSpicy(Heap)/moreSpicy.cpp" "STLStudy/MoreSpicy(Heap)/priorityQueueExamples.cpp" "STLStudy/FindNumber(Set)/findNumber.cpp"
-    Foo/foo.cpp)
-
+    Foo/foo.cpp NameSpace/car.cpp NameSpace/xycar.cpp
+    )

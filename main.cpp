@@ -3,10 +3,10 @@
 ////
 
 #include <iostream>
-#include "Foo/foo.hpp"
+#include "NameSpace/car.hpp"
 
 int main() {
 
-    std::cout << "Foo : " << foo() << std::endl;
+    std::cout << car::motor() << std::endl;
     return 0;
 }
