@@ -9,4 +9,4 @@ add_executable(CppStudy
 #    STLStudy/input.cpp
 #    STLStudy/MergeSort/k.cpp STLStudy/Scope/scopeExample.cpp STLStudy/Scope/classScopeExample.cpp STLStudy/MergeSort/kMento.cpp "STLStudy/MoreSpicy(Heap)/moreSpicy.cpp" "STLStudy/MoreSpicy(Heap)/priorityQueueExamples.cpp" "STLStudy/FindNumber(Set)/findNumber.cpp"
     Foo/foo.cpp NameSpace/car.cpp NameSpace/xycar.cpp
-    )
+    ClaseExample/drive.cpp)

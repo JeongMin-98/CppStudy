@@ -3,10 +3,21 @@
 ////
 
 #include <iostream>
-#include "NameSpace/car.hpp"
+#include "ClaseExample/drive.hpp"
+
+using namespace std;
 
 int main() {
+    xycar::drive myCar;
 
-    std::cout << car::motor() << std::endl;
+    myCar.checkStatus();
+    cout << "전진 !! " << endl;
+    myCar.forward();
+    myCar.checkStatus();
+    cout << "후진 !!" << endl;
+    myCar.backward();
+    myCar.checkStatus();
+
     return 0;
+
 }
