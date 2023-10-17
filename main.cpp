@@ -1,15 +1,12 @@
 ////
 //// Created by jeong on 2023-07-24.
 ////
-#include <string>
+
 #include <iostream>
+#include "Foo/foo.hpp"
 
 int main() {
-    std::string c = "abc";
-    std::cout << c << std::endl;
 
-    std::cout << c[0] << std::endl;
-    std::cout << c[1] << std::endl;
-
+    std::cout << "Foo : " << foo() << std::endl;
     return 0;
 }
