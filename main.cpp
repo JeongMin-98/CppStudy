@@ -3,13 +3,15 @@
 ////
 
 #include <iostream>
-#include "ClaseExample/drive.hpp"
+#include "include/drive.hpp"
 
 using namespace std;
 
 int main() {
     xycar::drive myCar;
+    xycar::drive otherCar(5, 5);
 
+    otherCar.checkStatus();
     myCar.checkStatus();
     cout << "전진 !! " << endl;
     myCar.forward();

@@ -8,14 +8,18 @@
 namespace xycar {
 
     class drive {
-    public:
+    private:
         int angle;
         int speed;
+    public:
+        drive() : drive(0, 0) {}
 
-        drive() {
-            angle = 0;
-            speed = 0;
+        drive(int a, int s) {
+            angle = a;
+            speed = s;
+            return;
         };
+        ~drive();
 
         void checkStatus();
 
