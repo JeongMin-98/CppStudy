@@ -2,7 +2,8 @@
 // Created by jeong on 2023-10-17.
 //
 #include <iostream>
-#include "../../include/drive.hpp"
+#include "drive.hpp"
+
 
 namespace xycar {
     void drive::checkStatus() {
@@ -18,5 +19,9 @@ namespace xycar {
     int drive::backward() {
         speed = -5;
         return 0;
+    }
+
+    drive::~drive() {
+        return;
     }
 }

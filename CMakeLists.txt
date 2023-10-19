@@ -1,29 +1,28 @@
 cmake_minimum_required(VERSION 3.10)
+
+
+set(CppStudy_PROJECT_NAME CppStudy)
+set(SOURCE_DIR src)
+set(SOURCE ${SOURCE_DIR}/main.cpp)
+set(LIBRARIES_DIR libs)
+set(LIBRARIES
+        NameSpace
+        Foo
+        Drive
+        )
+
 project(
-        CppStudy
+        ${CppStudy_PROJECT_NAME}
         VERSION 1.0.0
-        DESCRIPTION "I make to study For CPP and Cmake Project"
-#        HOMEPAGE_URL https://github.com/JeongMin-98/CppStudy
+        DESCRIPTION "to study For CPP and Cmake Project"
+        #        HOMEPAGE_URL https://github.com/JeongMin-98/CppStudy
         LANGUAGES CXX
 )
 
-set(CMAKE_CXX_STANDARD 11)
-
-add_subdirectory(src)
-add_subdirectory(examples)
-
-set(LIBRARIES ClassExample Foo NameSpace)
+add_executable(${CppStudy_PROJECT_NAME} ${SOURCE})
 
 foreach (LIBRARY ${LIBRARIES})
-    set(LIB_OBJS ${LIB_OBJS} $<TARGET_OBJECTS:${LIBRARY}>)
-endforeach ()
+    add_subdirectory("${LIBRARIES_DIR}/${LIBRARY}")
+endforeach (LIBRARY)
 
-add_library(${PROJECT_NAME} STATIC ${LIB_OBJS})
-#add_executable(CppStudy
-#        main.cpp
-#        #    STLStudy/devtest.cpp STLStudy/float_study.cpp STLStudy/reference_study.cpp
-#        #    STLStudy/input.cpp
-#        #    STLStudy/MergeSort/k.cpp STLStudy/Scope/scopeExample.cpp STLStudy/Scope/classScopeExample.cpp STLStudy/MergeSort/kMento.cpp "STLStudy/MoreSpicy(Heap)/moreSpicy.cpp" "STLStudy/MoreSpicy(Heap)/priorityQueueExamples.cpp" "STLStudy/FindNumber(Set)/findNumber.cpp"
-#        src/Foo/foo.cpp src/NameSpace/car.cpp src/NameSpace/xycar.cpp
-#        src/ClassExample/drive.cpp
-#        examples/test.cpp)
+target_link_libraries(${PROJECT_NAME} ${LIBRARIES})
