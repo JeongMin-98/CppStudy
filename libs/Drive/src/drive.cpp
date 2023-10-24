@@ -11,6 +11,14 @@ namespace xycar {
         std::cout << "조향각 : " << angle << std::endl;
         std::cout << "속도 : " << speed << std::endl;
     }
+    int drive::getAngle() {
+        return angle;
+    }
+
+    int drive::getSpeed() {
+        return speed;
+    }
+
     int drive::forward() {
         speed = 5;
         return 0;

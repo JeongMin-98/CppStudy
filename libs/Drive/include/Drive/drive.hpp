@@ -23,6 +23,10 @@ namespace xycar {
 
         void checkStatus();
 
+        int getAngle();
+
+        int getSpeed();
+
         int forward();
 
         int backward();
